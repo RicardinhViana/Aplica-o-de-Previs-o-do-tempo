@@ -1,95 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-:root{
-    --white:#ffffff;
-    --dark1:#0e252b;
-    --dark2:#556a62;
-    --dark3:#7c8c94;
-    --dark4:#89a7b1;
-    --dark5:#cdbad5;
-    --dark6:#091a1d;
-    --black:#000000;
-    --cyan1:#60afff;
-    --gold: #e1c122;
-}
-
-body{
-    height: 100vh;
-    width: 100vw;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    /* Altura / vh - altura */
+    width: 100vw;
+    /*  vw - largura */
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
-.caixa-maior{
-    background:var(--dark6 );
-    opacity: 0.8;
-    border-radius: 15px;
+.caixa-maior {
+    background-color: #000000;/*  Troca cor de fundo  */
+    width: 95%; /*  Largura  */
+    max-width: 420px; /*  Largura  Maxima */
+    opacity: 0.8;/* transparencia do item */
     padding: 20px;
-    color: var(--white);
-    width: 95%;
-    max-width: 450px;
+    border-radius: 25px;
 }
 
-.input-cidade{
-    border: none;
-    outline: none;
-    padding: 14px;
-    border-radius: 75px;
+input {
+    border: none;/* borda do elemento */
+    outline: none;/* borda quando seleciona o elemento */
+    padding: 10px;/* espaçamento interno */
+    border-radius: 24px;/* arredonda as bordas */
     font-size: 20px;
-    background-color: var(--dark3);
-    color: var(--black);
-    width: calc(100% - 100px);
+    background-color: #7c7c7c2b;
+    color: #ffffff;
+    width: calc( 100% - 100px);
 }
 
-.botao-busca{
+button {
     border: none;
     outline: none;
-    padding: 19px;
+    padding: 10px;
     border-radius: 50px;
-    background-color: var(--dark3);
+    background-color: #7c7c7c2b;
+    float: right;
     cursor: pointer;
-    
 }
 
-.img-busca{
-    width: 15px;
+button:hover {
+    background-color: #7c7c7c6b;
 }
 
-.caixa-media{
+.caixa-media {
     margin-top: 30px;
 }
 
-.cidade{
-    color: var(--white);
-    font-size: 28px;
-    font-weight: 300;
-}
-
-.tempo{
-    font-size: 18px;
-    color: var(--white);
-    margin-top: 20px;
-}
-
-.caixa-menor{
+.caixa-menor {
     display: flex;
+    margin-top: 30px;
     align-items: center;
-    margin-top: 20px;
 }
 
-.texto-previsao{
-    color: var(--white);
+.lupa {
+    height: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px; /* tamanho do texto */
+}
+
+.temp {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.descricao {
+    color: #ffffff;
     margin-left: 20px;
+    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
 }
 
-.umidade{
-    color: var(--white);
-    margin-top: 20px;
+.umidade {
+    color: #ffffff;
+    margin-top: 30px;
 }
